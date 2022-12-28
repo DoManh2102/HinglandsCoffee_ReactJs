@@ -1,0 +1,18 @@
+/* INTRODUCE */
+.introduce__item {
+    text-align: center;
+}
+
+.introduce__item img {
+    width: 20%;
+}
+
+.introduce__item h3 {
+    color: #fff;
+    font-size: 17px;
+    margin: 20px 0 10px;
+}
+
+.introduce__item p {
+    color: #7f7d7d;
+}

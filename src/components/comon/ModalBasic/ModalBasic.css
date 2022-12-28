@@ -1,0 +1,109 @@
+/* MODAL */
+.modal-dialog {
+    position: absolute;
+    top: 5vh;
+    left: 25%;
+    right: 25%;
+    max-width: 1000px;
+    z-index: 2;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal__right .modal__logo {
+    height: 85px;
+    margin-top: 1rem;
+}
+
+.modal__right .modal__content .modal__title {
+    font-family: "Meddon", cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.modal__right .modal__content .modal__text {
+    width: 90%;
+    color: #7f7d7d;
+}
+
+.modal__right .modal__content .modal__star {
+    color: #dbad6a;
+    margin-bottom: 20px;
+}
+
+.modal__right .modal__content .modal__star span {
+    color: #fff;
+}
+
+.modal__right .modal__content .modal__price span {
+    text-decoration-line: line-through;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.modal__right .modal__content .modal__price p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.modal__right .modal__content .modal__btn button {
+    padding: 6px 80px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.modal__right .modal__content .modal__btn button:hover {
+    background-color: #dbad6a;
+}
+
+.modal__right .modal__content .modal__btn .modal__cart {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+    border: 1px solid #333333;
+}
+
+.modal__right .modal__content .modal__btn .modal__cart a {
+    font-size: 25px;
+    color: #fff;
+}
+
+.modal__right .modal__content .modal__love {
+    margin-top: 10px;
+}
+
+.modal__right .modal__content .modal__love a:hover span {
+    color: #dbad6a;
+}
+
+.modal-content .modal-footer {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* custom */
+.btn_close {
+    position: absolute;
+    font-size: 25px;
+    top: -30px;
+    right: -26px;
+}
+
+.modal__text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,9 @@
+/* custom */
+
+.paginate ul {
+    display: flex;
+}
+
+.paginate ul li {
+    list-style: none;
+}

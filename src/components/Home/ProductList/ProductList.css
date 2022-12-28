@@ -1,0 +1,148 @@
+/* PRODUCTS */
+.products {
+    padding: 100px 0;
+    position: relative;
+}
+
+.products__title h3 {
+    font-family: "Meddon";
+    color: #fff;
+}
+
+.products__category {
+    width: 100%;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: #dbad6a;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #dbad6a;
+}
+
+.products .products__card {
+    margin-top: 50px;
+}
+
+.products__item {
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.537);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.products__item .card__img {
+    background-color: #141414;
+    padding: 20px;
+    position: relative;
+}
+
+.products__item .card-body {
+    background-color: #1b1b1b;
+}
+
+.card-body .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.card-body .card-title:hover {
+    color: #dbad6a;
+}
+
+.card-body .card__star p {
+    color: #dbad6a;
+    margin-bottom: 5px;
+}
+
+.card-body .card__star span {
+    color: #fff;
+}
+
+.card-body .card__price {
+    display: flex;
+}
+
+.card-body .card__price p {
+    text-decoration-line: line-through;
+    font-size: 12px;
+    color: #7f7d7d;
+    margin: 0;
+}
+
+.card-body .card__price span {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card__ovelay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.products__item .card:hover .card__ovelay {
+    bottom: 15px;
+    opacity: 1;
+}
+
+.card__discount {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 15px;
+    border: 1px solid #dbad6a;
+}
+
+.card__discount span {
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+}
+
+.overlay__item {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__ovelay a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 2%;
+    padding: 6px 6px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+.card__ovelay a:hover i {
+    color: #dbad6a;
+}

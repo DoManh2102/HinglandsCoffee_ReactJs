@@ -1,0 +1,91 @@
+.category__wrapper {
+    background-image: url("../../../../public/img/bg-2.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.category__wrapper h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.category__banner .banner__content p {
+    line-height: 30px;
+    color: #7f7d7d;
+}
+
+.category__banner .banner__content button {
+    padding: 8px 80px;
+    border: 1px solid #dbad6a;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.category__banner .banner__content button:hover {
+    background-color: #dbad6a;
+}
+
+.category__item {
+    padding: 20px 0 20px;
+}
+
+.category__title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.category__title p {
+    width: 60%;
+    color: #7f7d7d;
+    line-height: 25px;
+}
+
+.category__category {
+    width: 65%;
+    margin-top: 50px;
+}
+
+.category__category .category__img img {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #7f7d7d;
+    background-color: #141414;
+}
+
+.category__category .category__title {
+    margin-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.category__category .category__title h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.category .owl-theme .owl-dots {
+    display: none;
+}
+
+.category .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 30%;
+    right: -50px;
+    font-size: 25px;
+}
+
+.category .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -60px;
+    font-size: 25px;
+}

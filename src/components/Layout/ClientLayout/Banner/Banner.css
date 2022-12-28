@@ -1,0 +1,48 @@
+.banner {
+    background-image: url("../../../../../public/img/s1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner__enjoy {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+.banner__enjoy h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 45px;
+    margin: 0;
+}
+
+.banner__enjoy span {
+    color: #f1bc7a;
+    margin-left: -10px;
+}
+
+.banner__enjoy a {
+    color: #f1bc7a;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    white-space: normal;
+    padding: 12px 40px;
+    font-size: 14px;
+    border: 1px solid rgb(219, 173, 106);
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.banner__enjoy a:hover {
+    background-color: #f1bc7a;
+}

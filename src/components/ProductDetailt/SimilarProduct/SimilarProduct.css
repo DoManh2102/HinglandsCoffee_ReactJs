@@ -1,0 +1,99 @@
+.SimilarProduct {
+    background-image: url("../../../../public/img/bg-2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.listSimilar {
+    width: 65%;
+}
+
+.category__img img {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #7f7d7d;
+    background-color: #141414;
+    transition: 0.5s;
+}
+
+.category__title {
+    padding-right: 30px;
+    text-align: center;
+}
+
+.category__title h3 {
+    margin-top: 24px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.category__title h3:hover {
+    color: #f14a50;
+}
+
+.category__title .category__price {
+    color: #dbad6a;
+    margin: 0 auto;
+}
+
+.category__img {
+    position: relative;
+}
+
+.card__ovelay {
+    position: absolute;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.category__img:hover .card__ovelay {
+    bottom: 15px;
+    opacity: 1;
+}
+
+.category__img:hover img {
+    /* padding-bottom: 60px; */
+}
+
+.overlay__item {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.card__ovelay a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 2%;
+    padding: 6px 6px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+.card__ovelay i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.card__ovelay a:hover i {
+    color: #dbad6a;
+}
+
+/* config owl-carousel */
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.SimilarProduct .owl-carousel .owl-nav button.owl-next,
+.SimilarProduct .owl-carousel .owl-nav button.owl-prev {
+    top: 28%;
+}

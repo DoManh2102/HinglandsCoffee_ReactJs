@@ -1,0 +1,113 @@
+/* Testimonials */
+.testimonials .container {
+    width: 50%;
+}
+
+.testimonials__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials__avatar img {
+    border-radius: 50%;
+}
+
+.testimonials__content {
+    position: relative;
+}
+
+.testimonials__content .testimonials__body {
+    text-align: center;
+}
+
+.testimonials__comment {
+    color: #7f7d7d;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.testimonials__name h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonials__position {
+    color: #dbad6a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonials__contact {
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.testimonials__contact a {
+    padding: 0 10px;
+}
+
+.testimonials__contact i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.testimonials__contact i:hover {
+    color: #dbad6a;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    font-size: 40px;
+    position: absolute;
+    top: 35%;
+    left: -10%;
+}
+.owl-carousel .owl-nav button.owl-next {
+    font-size: 40px;
+    position: absolute;
+    top: 35%;
+    right: -10%;
+}
+/* fig carousel */
+.carousel .slide {
+    text-align: center;
+}
+.carousel-control-next-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-control-next {
+    right: 5%;
+}
+.carousel-control-prev {
+    left: 5%;
+}
+
+.carousel-control-prev-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.listTestimonials {
+    width: 50% !important;
+    margin: 0 auto;
+}
