@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/HinglandsCoffee_UI/static/css/main.c55f3fe3.css",
+    "main.js": "/HinglandsCoffee_UI/static/js/main.e2d3e70e.js",
+    "static/js/787.9f304fef.chunk.js": "/HinglandsCoffee_UI/static/js/787.9f304fef.chunk.js",
+    "static/media/s1.jpg": "/HinglandsCoffee_UI/static/media/s1.5759976e51d6c735aba7.jpg",
+    "static/media/h1.jpg": "/HinglandsCoffee_UI/static/media/h1.0f2924ff88c6973b1dfb.jpg",
+    "static/media/bg-2.jpg": "/HinglandsCoffee_UI/static/media/bg-2.e5457d124855e6b01b5f.jpg",
+    "index.html": "/HinglandsCoffee_UI/index.html",
+    "main.c55f3fe3.css.map": "/HinglandsCoffee_UI/static/css/main.c55f3fe3.css.map",
+    "main.e2d3e70e.js.map": "/HinglandsCoffee_UI/static/js/main.e2d3e70e.js.map",
+    "787.9f304fef.chunk.js.map": "/HinglandsCoffee_UI/static/js/787.9f304fef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c55f3fe3.css",
+    "static/js/main.e2d3e70e.js"
+  ]
+}
