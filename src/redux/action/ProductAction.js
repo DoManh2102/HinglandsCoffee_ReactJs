@@ -1,11 +1,13 @@
 import axios from "axios"
 import Swal from 'sweetalert2'
 
+const API = `${process.env.REACT_APP_BACKEND_URL}/api/v1/product`
+
 export const getProductListApi = () => {
     return async (dispatch) => {
         try {
             let result = await axios({
-                url: 'http://localhost:3100/api/v1/product/',
+                url: API,
                 method: 'GET'
             })
             await dispatch({
@@ -22,7 +24,7 @@ export const getProductSearch = (name) => {
     return async (dispatch) => {
         try {
             let result = await axios({
-                url: `http://localhost:3100/api/v1/product/?name=${name}`,
+                url: API + `/?name=${name}`,
                 method: 'GET'
             })
             await dispatch({
@@ -39,7 +41,7 @@ export const getManageProductSearch = (name) => {
     return async (dispatch) => {
         try {
             let result = await axios({
-                url: `http://localhost:3100/api/v1/product/?name=${name}`,
+                url: API + `/?name=${name}`,
                 method: 'GET'
             })
             await dispatch({
@@ -56,7 +58,7 @@ export const getProductDetailt = (id) => {
     return async (dispatch) => {
         try {
             let result = await axios({
-                url: `http://localhost:3100/api/v1/product/${id}`,
+                url: API + `/${id}`,
                 method: 'GET'
             })
             dispatch({
@@ -73,7 +75,7 @@ export const addProductApi = (formData) => {
     return async (dispatch) => {
         try {
             const result = await axios({
-                url: 'http://localhost:3100/api/v1/product',
+                url: API,
                 method: 'POST',
                 data: formData
             })
@@ -89,7 +91,7 @@ export const updateProductAction = (id, formData) => {
     return async (dispatch) => {
         try {
             const result = await axios({
-                url: `http://localhost:3100/api/v1/product/${id}`,
+                url: API + `/${id}`,
                 method: 'POST',
                 data: formData
             })
@@ -106,7 +108,7 @@ export const deleteProductApi = (id) => {
     return async (dispatch) => {
         try {
             await axios({
-                url: `http://localhost:3100/api/v1/product/${id}`,
+                url: API + `/${id}`,
                 method: 'DELETE',
             })
             dispatch(getProductListApi())

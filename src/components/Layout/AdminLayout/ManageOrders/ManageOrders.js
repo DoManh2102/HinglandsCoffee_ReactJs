@@ -9,6 +9,7 @@ const headerList = [
     { fields: 'address', },
     { fields: 'phone', },
     { fields: 'total', width: '10%' },
+    { fields: 'createTime', width: '10%' },
     { fields: 'Cart_Item', btnDetail: true, width: '10%' },
     { fields: '', btnDelete: true, width: '100px' },
 ]

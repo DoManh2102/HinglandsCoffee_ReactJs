@@ -183,7 +183,7 @@ header .header__logoHinglands p {
     color: #fff;
     padding: 10px 17px;
     font-weight: 700;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 /* navbar */

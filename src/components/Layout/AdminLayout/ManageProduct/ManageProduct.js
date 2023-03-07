@@ -17,7 +17,7 @@ const headerList = [
     { fields: 'product_img', },
     { fields: 'price', },
     { fields: 'description', width: '50%' },
-    { fields: '', btnCreate: true, btnEdit: true, btnDelete: true, width: '170px' },
+    { fields: '', btnEdit: true, btnDelete: true, width: '170px' },
 ]
 
 function ManageProduct(props) {

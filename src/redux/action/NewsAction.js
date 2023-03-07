@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API = 'http://localhost:3100/api/v1/news'
+const API = `${process.env.REACT_APP_BACKEND_URL}/api/v1/news`
 
 export const getNewsLisAction = () => {
     return async (dispatch) => {

@@ -1,7 +1,7 @@
 import axios from "axios"
 import Swal from 'sweetalert2'
 
-const api = 'http://localhost:3100/api/v1/cartItems'
+const api = `${process.env.REACT_APP_BACKEND_URL}/api/v1/cartItems`
 export const getListCartItem = () => {
     return async (dispatch) => {
         try {

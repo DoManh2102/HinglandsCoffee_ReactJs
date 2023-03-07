@@ -1,7 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
 
-
 function Dashboard(props) {
     return (
         <div id="layoutSidenav_content">

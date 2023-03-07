@@ -1,6 +1,6 @@
 const stateDefault = {
     productList: [],
-    productDetailt: [],
+    productDetailt: {},
     productSearch: null,
 }
 

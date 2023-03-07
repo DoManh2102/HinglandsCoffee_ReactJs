@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import InfoCategory from './InfoCategory/InfoCategory';
 import SimilarProduct from '../ProductDetailt/SimilarProduct/SimilarProduct';
 import { useSelector, useDispatch } from 'react-redux'
+import { Helmet } from "react-helmet";
 
 
 
@@ -16,6 +17,10 @@ function CategoryDetailt(props) {
 
     return (
         <section className="category pt-3" style={{ backgroundColor: "#1b1b1b" }}>
+            {categoryDetailt.category_name ? <Helmet>
+                <title>{categoryDetailt.category_name} | Highlands Coffee</title>
+                <meta name="description" content={categoryDetailt.description} />
+            </Helmet> : ''}
             <InfoCategory categoryDetailt={categoryDetailt} productType={productByCategory} />
             <SimilarProduct productType={productByCategory} categoryFound={categoryFound} />
         </section>

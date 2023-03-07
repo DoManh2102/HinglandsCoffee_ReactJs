@@ -28,7 +28,7 @@ function TableBasic({ headerList, data, deleteRow, toggleModal, cartItem }) {
                                             {column.btnEdit && <button onClick={() =>
                                                 toggleModal(row)
                                             } className='btn btn-success ml-2 px-3'>Edit</button>}
-                                            {column.btnDelete ? <button onClick={() => deleteRow(row)} className='btn btn-danger ml-2 px-2'>Delete</button> : ''}
+                                            {column.btnDelete ? <button onClick={() => deleteRow(row)} className='btn btn-danger ms-2 px-2'>Delete</button> : ''}
                                             {column.btnDetail ? <BiDetail style={{ fontSize: '30px' }} onClick={() => {
                                                 return (
                                                     toggleModal(true),

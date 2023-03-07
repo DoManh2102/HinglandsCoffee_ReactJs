@@ -1,6 +1,8 @@
 import axios from "axios";
 
+// const api = `http://localhost:3100/api/v1/user`
 const api = `http://localhost:3100/api/v1/user`
+
 
 export const getUserAdminAction = () => {
     return async (dispatch) => {

@@ -61,7 +61,7 @@ function ProductList(props) {
                                         <div key={index} className="products__item col-3">
                                             <div className="card">
                                                 <div className="card__img">
-                                                    <img src={product.product_img} className="card-img-top" alt={product.product_name} />
+                                                    <img src={product.product_img} className="card-img-top" alt={product.product_name} style={{ height: "250px" }} />
                                                     <div className="card__ovelay">
                                                         <div className="overlay__item">
                                                             <a href="#">

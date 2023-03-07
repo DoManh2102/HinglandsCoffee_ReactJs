@@ -17,6 +17,7 @@ function Cart(props) {
         phone: ''
     })
     // console.log(productCart);
+    const today = new Date()
 
     const navigate = useNavigate();
     const dispatch = useDispatch()
@@ -46,6 +47,7 @@ function Cart(props) {
     };
 
     const handleCheckout = async () => {
+        console.log(productCart);
         if (productCart.length > 0 && valueInput.address !== '' && valueInput.phone !== '') {
             navigate("/login");
             if (userLogin.message === 'Đăng nhập thành công') {
@@ -56,6 +58,7 @@ function Cart(props) {
                         address: valueInput.address,
                         phone: valueInput.phone,
                         productCart: productCart,
+                        createTime: today.getHours() + ":" + today.getMinutes() + " " + today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear(),
                         total: totalCart
                     }
                 })

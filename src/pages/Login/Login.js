@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { LoginAction } from '../../redux/action/UserLoginAction';
 import { Link, useNavigate } from "react-router-dom";
 import { BiArrowBack } from 'react-icons/bi';
+import { Helmet } from "react-helmet";
 
 
 export default function Login(props) {
@@ -19,9 +20,9 @@ export default function Login(props) {
     };
 
     //validate chưa nhập tt
-    const onFinishFailed = async (errorInfo) => {
-        await console.log('Failed:', errorInfo);
-    };
+    // const onFinishFailed = async (errorInfo) => {
+    //     await console.log('Failed:', errorInfo);
+    // };
 
     //userLogin đã tồn tại => điều hướng trang đến dashboard
     useEffect(() => {
@@ -39,8 +40,20 @@ export default function Login(props) {
         }
     }, [userLogin]);
 
+    const login = async () => {
+        const value = {
+            email: "domanh@gmail.com",
+            password: '21022001',
+        }
+        await dispatch(LoginAction(value))
+        navigate(-1)
+    }
+
     return (
         <div className='form_login'>
+            <Helmet>
+                <title>Login | Highlands Coffee</title>
+            </Helmet>
             <div className="form" style={{ margin: '80px 0 50px 0' }}>
                 <div id="form_container">
                     <div id="title">
@@ -60,7 +73,7 @@ export default function Login(props) {
                             remember: true,
                         }}
                         onFinish={onFinish}
-                        onFinishFailed={onFinishFailed}
+                        // onFinishFailed={onFinishFailed}
                         autoComplete="off"
                     >
                         <Form.Item
@@ -105,7 +118,7 @@ export default function Login(props) {
                                 span: 16,
                             }}
                         >
-                            <Button type="primary" htmlType="submit">
+                            <Button onClick={() => login()} type="primary" htmlType="submit">
                                 Submit
                             </Button>
                         </Form.Item>

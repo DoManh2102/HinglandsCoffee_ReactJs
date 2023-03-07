@@ -50,8 +50,8 @@ export const CartReducer = (state = stateDefault, action) => {
             return { ...state }
         }
         case 'DELETE_ORDER': {
-            console.log(action.order);
-            state.cart.splice(action.order, 1)
+            const index = state.cart.findIndex(item => item == action.order)
+            state.cart.splice(index, 1)
             localStorage.setItem('CART_ITEM', JSON.stringify(state.cart));
             return { ...state }
         }

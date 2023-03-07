@@ -1,7 +1,7 @@
 import axios from "axios"
 import { getListCartItem } from "./CartItemsAction"
 
-const api = 'http://localhost:3100/api/v1/cart'
+const api = `${process.env.REACT_APP_BACKEND_URL}/api/v1/cart`
 
 
 export const getCartAction = () => {

@@ -5,6 +5,8 @@ import Header from './components/Header';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import './AdminLayout.css'
+import { Helmet } from "react-helmet";
+
 
 function AdminLayout({ children }) {
     let { userLogin } = useSelector(state => state.UserLoginReducer)
@@ -18,6 +20,9 @@ function AdminLayout({ children }) {
 
     return (
         <>
+            <Helmet>
+                <title>Admin | Highlands Coffee</title>
+            </Helmet>
             <Header />
             <div id="layoutSidenav">
                 <Sidebar userLogin={userLogin} />
