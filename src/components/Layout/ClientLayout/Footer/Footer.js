@@ -78,7 +78,7 @@ function Footer(props) {
                 </div>
                 <hr />
                 <div className="footer__bottom">
-                    <p>© 2022 Mocca Theme. All right reserved.</p>
+                    <p style={{ paddingBottom: '20px' }}>© 2022 Mocca Theme. All right reserved.</p>
                 </div>
             </div>
         </footer>

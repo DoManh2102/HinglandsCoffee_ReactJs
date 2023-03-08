@@ -7,3 +7,30 @@
 .paginate ul li {
     list-style: none;
 }
+
+.bg-light {
+    --bs-bg-opacity: 0;
+}
+
+.paginate .page-link {
+    background-color: #343a40;
+}
+
+.paginate .page-link:active {
+    color: #fff;
+    background-color: #80858b;
+}
+
+:where(.css-dev-only-do-not-override-stni74).ant-form-item .ant-form-item-label > label {
+    color: #fff;
+}
+
+:where(.css-dev-only-do-not-override-stni74).ant-input {
+    background-color: #242425;
+    color: #fff;
+    border-color: #242425;
+}
+.form-select {
+    background-color: #242425;
+    color: #fff;
+}

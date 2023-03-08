@@ -24,6 +24,7 @@ export const CartReducer = (state = stateDefault, action) => {
             if (index !== -1) {
                 alert('Sản phẩm đã có trong giỏ hàng')
             } else {
+                alert('Đã thêm vào giỏ hàng')
                 state.productCart.push(state.product)
             }
             return { ...state }

@@ -4,7 +4,7 @@ import { BiDetail } from 'react-icons/bi';
 
 function TableBasic({ headerList, data, deleteRow, toggleModal, cartItem }) {
     return (
-        <Table bordered hover style={{ color: '#fff' }}>
+        <Table bordered style={{ color: '#fff' }}>
             <thead>
                 <tr>
                     {headerList?.map((title, index) =>

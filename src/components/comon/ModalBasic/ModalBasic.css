@@ -10,6 +10,7 @@
 
 .modal-content {
     position: relative;
+    background-color: #0f0e0e;
 }
 
 .modal__right .modal__logo {
@@ -99,6 +100,7 @@
     font-size: 25px;
     top: -30px;
     right: -26px;
+    color: #fff;
 }
 
 .modal__text {
