@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const api = `http://localhost:3100/api/v1/user/login`
+const api = `${process.env.REACT_APP_BACKEND_URL}/api/v1/user/login`
 
 export const LoginAction = (dataUser) => {
     return async (dispatch) => {
