@@ -10,10 +10,11 @@ import { useParams } from 'react-router-dom'
 import { getCategoryDetailt, getCategoryListAction } from '../../../../redux/action/CategoryAction';
 import { getProductDetailt, getProductListApi, getProductSearch } from '../../../../redux/action/ProductAction';
 import { useNavigate } from "react-router-dom";
+import { categorys } from '../../../comon/Category';
 
 function Header(props) {
     let { productList } = useSelector(state => state.ProductReducer)
-    let { categorys } = useSelector(state => state.CategoryReducer)
+    // let { categorys } = useSelector(state => state.CategoryReducer)
     let { userLogin } = useSelector(state => state.UserLoginReducer)
     const { productCart } = useSelector(state => state.CartReducer)
 

@@ -4,11 +4,12 @@ import InfoProduct from './InfoProduct/InfoProduct';
 import SimilarProduct from './SimilarProduct/SimilarProduct';
 import { useSelector, useDispatch } from 'react-redux'
 import { Helmet } from "react-helmet";
+import { categorys } from '../comon/Category';
 
 
 function ProductDetailt(props) {
     let { productList } = useSelector(state => state.ProductReducer)
-    let { categorys } = useSelector(state => state.CategoryReducer)
+    // let { categorys } = useSelector(state => state.CategoryReducer)
     let { productDetailt } = useSelector(state => state.ProductReducer)
     // let { size } = useSelector(state => state.SizeReducer)
     // const dispatch = useDispatch()

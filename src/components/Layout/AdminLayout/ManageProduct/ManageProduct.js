@@ -8,6 +8,7 @@ import { Button, Form, Input } from 'antd';
 import Swal from 'sweetalert2'
 import ReactPaginate from 'react-paginate';
 import { addSizeAction } from '../../../../redux/action/SizeActione';
+import { categorys } from '../../../comon/Category';
 
 const { TextArea } = Input;
 
@@ -23,7 +24,7 @@ const headerList = [
 function ManageProduct(props) {
     // lấy dữ liệu từ reducer
     let { productList } = useSelector(state => state.ProductReducer)
-    let { categorys } = useSelector(state => state.CategoryReducer)
+    // let { categorys } = useSelector(state => state.CategoryReducer)
     const [inputSearch, setInputSearch] = useState({
         keyword: ''
     });

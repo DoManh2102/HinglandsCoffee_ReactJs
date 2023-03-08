@@ -5,11 +5,12 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { AiOutlineExpand } from 'react-icons/ai';
 import { BsCartPlus } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux'
+import { categorys } from '../../comon/Category';
 
 
 function ProductList(props) {
     let { productList } = useSelector(state => state.ProductReducer)
-    let { categorys } = useSelector(state => state.CategoryReducer)
+    // let { categorys } = useSelector(state => state.CategoryReducer)
     const [productByCategory, setProductByCategory] = useState(productList)
     const [toggleModal, setToggleModal] = useState(false)
     const [producModal, setProductModal] = useState({})

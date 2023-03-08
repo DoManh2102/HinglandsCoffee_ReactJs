@@ -4,12 +4,12 @@ import InfoCategory from './InfoCategory/InfoCategory';
 import SimilarProduct from '../ProductDetailt/SimilarProduct/SimilarProduct';
 import { useSelector, useDispatch } from 'react-redux'
 import { Helmet } from "react-helmet";
-
+import { categorys } from '../comon/Category';
 
 
 function CategoryDetailt(props) {
     let { productList } = useSelector(state => state.ProductReducer)
-    let { categorys } = useSelector(state => state.CategoryReducer)
+    // let { categorys } = useSelector(state => state.CategoryReducer)
     let { categoryDetailt } = useSelector(state => state.CategoryReducer)
 
     const categoryFound = categorys.filter(category => category.id === categoryDetailt.id)
