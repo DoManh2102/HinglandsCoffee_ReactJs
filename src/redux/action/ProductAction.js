@@ -14,7 +14,7 @@ export const getProductListApi = (handleToggleLoading) => {
                 type: 'GET_PRODUCT',
                 productList: result.data
             })
-            await handleToggleLoading(false)
+            handleToggleLoading && await handleToggleLoading(false)
         } catch (error) {
             console.log(error);
         }
