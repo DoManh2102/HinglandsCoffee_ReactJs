@@ -11,16 +11,27 @@ import { getCategoryDetailt, getCategoryListAction } from '../../../../redux/act
 import { getProductDetailt, getProductListApi, getProductSearch } from '../../../../redux/action/ProductAction';
 import { useNavigate } from "react-router-dom";
 import { categorys } from '../../../comon/Category';
+import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 function Header(props) {
     let { productList } = useSelector(state => state.ProductReducer)
     // let { categorys } = useSelector(state => state.CategoryReducer)
     let { userLogin } = useSelector(state => state.UserLoginReducer)
     const { productCart } = useSelector(state => state.CartReducer)
-
     const [inputSearch, setInputSearch] = useState({
         name: ''
     })
+
+    const [isLoading, setIsLoading] = useState(true)
+    const antIcon = (
+        <LoadingOutlined
+            style={{
+                fontSize: 28,
+            }}
+            spin
+        />
+    );
 
     const dispatch = useDispatch()
     useEffect(() => {
@@ -29,7 +40,7 @@ function Header(props) {
     }, [])
 
     useEffect(() => {
-        const action = getProductListApi();
+        const action = getProductListApi(handleToggleLoading);
         dispatch(action)
     }, [])
 
@@ -70,6 +81,9 @@ function Header(props) {
     return (
         <header>
             <div className="header__content">
+                <div className='iconLoading text-center'>
+                    {isLoading && <Spin indicator={antIcon} style={{ backgroundColor: '#343a40', borderRadius: '50%', padding: '8px 8px' }} />}
+                </div>
                 <div className="container">
                     <div className="row">
                         <div className="header__logoHinglands col-2" style={{ textAlign: 'center' }}>

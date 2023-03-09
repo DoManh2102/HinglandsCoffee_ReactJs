@@ -3,7 +3,7 @@ import Swal from 'sweetalert2'
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api/v1/product`
 
-export const getProductListApi = () => {
+export const getProductListApi = (handleToggleLoading) => {
     return async (dispatch) => {
         try {
             let result = await axios({
@@ -14,6 +14,7 @@ export const getProductListApi = () => {
                 type: 'GET_PRODUCT',
                 productList: result.data
             })
+            await handleToggleLoading(false)
         } catch (error) {
             console.log(error);
         }
