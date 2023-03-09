@@ -32,6 +32,10 @@ function Header(props) {
             spin
         />
     );
+    const handleToggleLoading = (boollen) => {
+        setIsLoading(boollen)
+    }
+
 
     const dispatch = useDispatch()
     useEffect(() => {
